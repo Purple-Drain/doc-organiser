@@ -1,0 +1,13 @@
+{
+  "issuer_rules": [
+    ["\\b(bankwest|coles\\s*credit\\s*cards?|nab(?!\\w)|westpac|comm(?:onwealth)?\\s*bank|commbank|virgin\\s*money)\\b", "bank"],
+    ["\\b(australian\\s*government|services\\s*australia|department\\s*of\\s*social\\s*services|nsw\\s*government|council|centrelink|university\\s*of\\s*queensland|university\\s*of\\s*newcastle)\\b", "gov"],
+    ["\\b(petbarn|chemist\\s*warehouse|decjuba|jb\\s*hi[- ]?fi|ikea|country\\s*road|adidas|bunnings|apex\\s*petroleum|tax\\s*invoice|receipt)\\b", "retail"],
+    ["\\b(instruction|user\\s*manual|guide|warranty|folding\\s*board)\\b", "manuals"],
+    ["\\b(pathology|ultrasound|referral|invoice.*(?:dental|dentist|clinic|pharmacy)|mometasone|insulin|doctor|\\bdr\\b|medical)\\b", "medical"]
+  ],
+  "party_names": [
+    ["\\bAaron\\s+De\\s+Vries\\b", "Aaron De Vries"],
+    ["\\bSylvia\\s+Lam\\b", "Sylvia Lam"]
+  ]
+}
