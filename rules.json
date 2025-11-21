@@ -1,34 +1,42 @@
 {
   "issuer_rules": [
     [
-      "\\b(bankwest|coles\\s*credit|nab|westpac|comm(?:onwealth)?\\s*bank|commbank|virgin\\s*money)\\b",
+      "\\b(bankwest|coles\\s*credit\\s*cards?|nab(?!\\w)|westpac|comm(?:onwealth)?\\s*bank|commbank|virgin\\s*money|creditsmart|anz|ing|macquarie|bank\\s*statement|credit\\s*card)\\b",
       "bank"
     ],
     [
-      "\\b(services\\s*australia|centrelink|department|council|nsw\\s*government)\\b",
+      "\\b(australian\\s*government|services\\s*australia|department\\s*of\\s*social\\s*services|nsw\\s*government|council|centrelink|university\\s*of\\s*queensland|university\\s*of\\s*newcastle|speeding\\s*fine|penalty\\s*notice|revenue\\s*nsw|medicare|tax\\s*office|ato)\\b",
       "gov"
     ],
     [
-      "\\b(petbarn|chemist\\s*warehouse|bunnings|jb\\s*hi-?fi|ikea|receipt|tax\\s*invoice)\\b",
+      "\\b(petbarn|chemist\\s*warehouse|decjuba|jb\\s*hi[- ]?fi|ikea|country\\s*road|adidas|bunnings|apex\\s*petroleum|tax\\s*invoice|receipt|garmin|woolworths|coles|kmart|target)\\b",
       "retail"
     ],
     [
-      "\\b(instruction|user\\s*manual|guide|warranty)\\b",
+      "\\b(instruction|user\\s*manual|guide|warranty|folding\\s*board|product\\s*information|quick\\s*start|installation\\s*guide)\\b",
       "manuals"
     ],
     [
-      "\\b(pathology|ultrasound|referral|dental|clinic|pharmacy|medical)\\b",
+      "\\b(pathology|ultrasound|referral|invoice.*(?:dental|dentist|clinic|pharmacy)|mometasone|insulin|doctor|\\bdr\\b|medical|prescription|health\\s*record|cymbalta|medication)\\b",
       "medical"
+    ],
+    [
+      "\\b(sydney\\s*water|australia\\s*post|mail\\s*redirect|utilities|electricity|gas|water\\s*bill|energy\\s*bill|telstra|optus|vodafone)\\b",
+      "utilities"
     ]
   ],
   "party_names": [
     [
-      "\\bAaron\\b",
+      "\\bAaron\\s+De\\s+Vries\\b",
       "Aaron"
     ],
     [
-      "\\bSylvia\\b",
+      "\\bSylvia\\s+Lam\\b",
       "Sylvia"
+    ],
+    [
+      "\\bBillie\\b.*\\(Dog\\)|\\(Dog\\).*\\bBillie\\b|Owner.*\\bBillie\\b",
+      "Billie"
     ]
   ]
 }
