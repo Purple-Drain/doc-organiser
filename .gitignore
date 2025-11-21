@@ -20,3 +20,4 @@ _index*.json
 _index*.csv
 .DS_Store
 Thumbs.db
+reset_for_reprocess.py
